@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Preisvorhersage - HOKY Immobilien</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}?v=2">
 </head>
 <body>
 
@@ -14,17 +15,16 @@
   </div>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#" class="active">Preisrechner</a>
-    <a href="#">Immobilien-Infos</a>
-    <a href="#">Datenschutz</a>
-    <a href="#">Kontakt</a>
+    <a href="/">Home</a>
+    <a href="/mehrÜberImmobilien">Immobilien-Infos</a>
+    <a href="/datenschutz">Datenschutz</a>
+    <a href="/kontakt">Kontakt</a>
   </nav>
 </header>
 
   <section class="hero">
     <div class="hero-content">
-      <h1>Immobilien Preisvorhersage</h1>
+      <h1 id="preisrechner">Immobilien Preisvorhersage</h1>
       <p>Hier können Sie den geschätzten Immobilienpreis einfach und schnell berechnen.</p>
     </div>
   </section>
